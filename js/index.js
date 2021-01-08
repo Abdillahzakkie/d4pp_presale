@@ -56,6 +56,7 @@ const loadBlockchainData = async () => {
 formInput.addEventListener('change', e => {
     e.preventDefault();
     const input = e.currentTarget.value;
+    console.log(input)
     if(isNaN(input)) return;
 
     const calcD4PPToken = Number(input) * 2.5;

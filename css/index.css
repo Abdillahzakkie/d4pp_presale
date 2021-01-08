@@ -14,7 +14,7 @@
     --mainGreen: #29ca8e;
     --mainSpacing: .1rem;
     --wordSpacing: .25rem;
-    --mainTransition : all 2s ease-in-out;
+    --mainTransition : all 1s ease-in-out;
 }
 
 li {
@@ -33,12 +33,17 @@ button { cursor: pointer; }
 
 .app {  
     overflow: hidden;
-    background: var(--darkGrey);
+   /* background: var(--darkGrey);*/
     margin: auto;
     width: 100vw;
-    height: 100vh;
-    font-family: 'Alegreya';
-}
+    height: 100vh;     font-family: 'Poppins', sans-serif;
+ }
+
+body{ background: url(../images/banner_bg_m.jpg);width: 100vw;
+    height: 100vh;background-repeat: no-repeat;    font-family: 'Poppins', sans-serif;
+    background-size: cover;}
+
+
 
 .grid {
     display: grid;
@@ -50,20 +55,22 @@ button { cursor: pointer; }
 
 /* CONTAINER MAIN LAYOUTS */
 .container {
-    background: var(--mainWhite);
-    box-shadow: 5px 5px 5px #000;
+   background: #ffffff;
+    box-shadow: 0px 10px 9px #292929;
     margin: auto;
     width: 45vw;
-    height: 70vh;
+    height: auto;
     padding: 1rem;
     letter-spacing: var(--mainSpacing);
-    border-radius: 1rem;
+    border-radius: 15px;
 }
 .header {
-    height: 50px;
-    width: 100%;
+     width: 100%;
     text-align: center;
 }
+
+.header h1{ text-transform: uppercase; font-size: 43px; padding-top: 22px; }
+
 .underline {
     width: 60px;
     height: 2.5px;
@@ -73,7 +80,7 @@ button { cursor: pointer; }
 
 .sub-container {
     grid-template-columns: repeat(2, 1fr);
-    padding: 1rem 0;
+    padding: 1rem 0;border-bottom: 1px solid #cccbcb;
 }
 
 
@@ -90,11 +97,19 @@ button { cursor: pointer; }
     width: 100%;
     margin: 0 0 0 1rem;
 }
-.sub-container .brand .grid img {
-    width: 35px;
-    height: 35px;
+.currency_img img {
+    width: 55px;
+    height: 55px;
     border-radius: 100%;
+    margin-top: 5px;
 }
+
+.clr{ clear: both; }
+.currency_img{ float: left;margin-top: 0px; margin-right: 15px; }
+.currency_nc, .price{ text-align: left; }
+.currency_nc h3{ font-size: 24px;
+    text-transform: uppercase; }
+.price p{ color: #757474;}
 
 .sub-container .price {
     width: 100%;
@@ -108,11 +123,15 @@ button { cursor: pointer; }
     width: 100%;
 }
 
+.eth-value, .d4pp-token-buy{ font-weight: 300; }
+
+
 /* PRICE CONVERT */
 .convert {
-    width: 100%;
+   width: 95%;
     height: 100%;
-    margin-bottom: .5rem;
+    margin-top: 21px;
+    border-bottom: 1px solid #dcdcdc;
 }
 .convert .price-convert {
     grid-template-columns: repeat(2, 1fr);
@@ -147,11 +166,11 @@ button { cursor: pointer; }
     letter-spacing: var(--mainSpacing);
 }
 
-.form-group input { font-family: cursive; }
+.form-group input { font-family: cursive;background: #efefef; }
 
 .form-group button {
-    background: #6c757d;
-    color: var(--white);
+    background: #fb3a0f;
+    color: var(--white); font-size: 26px;
     font-weight: 900;
     transition: var(--mainTransition);
 }
@@ -161,6 +180,28 @@ button { cursor: pointer; }
     background: transparent;
     border: 2px solid #6c757d;
 }
+
+
+.curc_blok{display: inline-block;
+    width: 48%;
+    background: #000;
+    padding: 30px;
+    border-radius: 16px; color: #fff;}
+.curc_blok_g{ width: 100%; display: inline-block; text-align: center; margin-top: 35px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1000px) {
